@@ -28,3 +28,11 @@ while (stock >= 0) {
     console.log (`Inventory stock is: ${stock}`) ; stock--      // While stock is greater than zero, decrease it until it reaches zero
 }                                               // Output: Inventory stock is: 10, Inventory stock is: 9, ...
 
+// Task 4 - Customer Survey
+
+var responses = 0                               // Creation of variable responses
+ do {
+    responses++ ;                               // Creates responses inputs until while condition is met
+    console.log(`Response count is ${responses}`)       // Output: 
+} while (responses < 3);                         // Statement will end when is equal to three
+
