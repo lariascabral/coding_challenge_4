@@ -69,12 +69,23 @@ for (const product of products) {               // For each product, log them in
  // Task 8 - Tax Calculation
 
 function calculateTax(amount, taxRate) {
-    return amount * (taxRate / 100) ;
-}
-       // Let's use an example case
+    return amount * (taxRate / 100) ;           // Function creation for tax rate
+} ;
+       // Example case
        let amount = 300 ; 
-       let taxRate = 18 ;
+       let taxRate = 18 ;                       // 18% tax rate
 
 console.log(`The calculated tax for $${amount} at a ${taxRate} tax rate is $${calculateTax(amount, taxRate)}`)
                                                 // The calculated tax for $300 at a 18 tax rate is $54
 
+
+// Task 9 - Discount Application
+
+const applyDiscount = function(price, discountPercentage) {
+    return price - (price * (discountPercentage / 100)) ;       // Function for discounts
+} ;
+       // Example case
+       let purchasePrice = 450 ; 
+       let discount = 12 ;                        // 12% discount
+
+console.log(`The discounted price is $${applyDiscount(purchasePrice, discount)}`, "for this purchase") ;
