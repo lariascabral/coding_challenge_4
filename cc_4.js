@@ -52,7 +52,15 @@ for (const property in employee) {
 
 // Task 6 - Product Listings
 
-let products = [ "pencil", "paper", "pen"]      // Creationg of product array
+let products = [ "pencil", "paper", "pen"] ;    // Creationg of product array
 for (const product of products) {               // For each product, log them in the console individually
     console.log(`Poduct: ${product}`)           // Output: Poduct: pencil   Poduct: paper   Poduct: pen
  } ;
+
+
+ // Task 7 - Order Processing
+
+ let orders = [1001, 1002, 1003, 1004] ;            // Creation of array of order IDs
+ orders.forEach(orderID => {                    // Per Order ID, a console entry will be done
+    console.log(`Order ID: ${orderID}`)         // Output: Order ID: 1001   Order ID: 1002  Order ID: 1003  Order ID: 1004
+ });
