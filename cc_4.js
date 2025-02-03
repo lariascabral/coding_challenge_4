@@ -35,7 +35,7 @@ var responses = 0                               // Creation of variable response
  do {
     responses++ ;                               // Creates responses inputs until while condition is met
     console.log(`Response count is ${responses}`)       // Output: 
-} while (responses < 3);                         // Statement will end when is equal to three
+} while (responses < 3);                        // Statement will end when is equal to three
 
 
 // Task 5 - Employee Information
@@ -49,4 +49,10 @@ for (const property in employee) {
  ;}                                             // Output:name: Alice   position: Manager   salary: 75000
 
 
- 
+
+// Task 6 - Product Listings
+
+let products = [ "pencil", "paper", "pen"]      // Creationg of product array
+for (const product of products) {               // For each product, log them in the console individually
+    console.log(`Poduct: ${product}`)           // Output: Poduct: pencil   Poduct: paper   Poduct: pen
+ } ;
