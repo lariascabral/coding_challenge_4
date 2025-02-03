@@ -28,6 +28,7 @@ while (stock >= 0) {
     console.log (`Inventory stock is: ${stock}`) ; stock--      // While stock is greater than zero, decrease it until it reaches zero
 }                                               // Output: Inventory stock is: 10, Inventory stock is: 9, ...
 
+
 // Task 4 - Customer Survey
 
 var responses = 0                               // Creation of variable responses
@@ -36,3 +37,16 @@ var responses = 0                               // Creation of variable response
     console.log(`Response count is ${responses}`)       // Output: 
 } while (responses < 3);                         // Statement will end when is equal to three
 
+
+// Task 5 - Employee Information
+
+let employee = { name: "Alice", 
+            position: "Manager", 
+            salary: 75000 } ;                   // Creation of the employee profile
+
+for (const property in employee) {
+    console.log(`${property}: ${employee[property]}`)       // Each property will be logged in the console individually.
+ ;}                                             // Output:name: Alice   position: Manager   salary: 75000
+
+
+ 
