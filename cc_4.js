@@ -46,7 +46,7 @@ let employee = { name: "Alice",
 
 for (const property in employee) {
     console.log(`${property}: ${employee[property]}`)       // Each property will be logged in the console individually.
- ;}                                             // Output:name: Alice   position: Manager   salary: 75000
+ } ;                                             // Output:name: Alice   position: Manager   salary: 75000
 
 
 
@@ -89,3 +89,16 @@ const applyDiscount = function(price, discountPercentage) {
        let discount = 12 ;                        // 12% discount
 
 console.log(`The discounted price is $${applyDiscount(purchasePrice, discount)}`, "for this purchase") ;
+                                                  // The discounted price is $396 for this purchase
+
+
+// Task 10 - Loyalty Points
+
+const calculatePoints = (purchaseTotal) => {         // Function of rcalculating loyalty points
+    return Math.floor(purchaseTotal / 10)          // 1 point per dollar spent with us
+} ;
+
+      // Example case
+      let purchaseTotal = 1000 ;
+
+console.log(`Thank you for shopping with us. For this purchase of $${purchaseTotal}, you earned a total of ${calculatePoints(purchaseTotal)} loyalty points!`)
