@@ -64,3 +64,17 @@ for (const product of products) {               // For each product, log them in
  orders.forEach(orderID => {                    // Per Order ID, a console entry will be done
     console.log(`Order ID: ${orderID}`)         // Output: Order ID: 1001   Order ID: 1002  Order ID: 1003  Order ID: 1004
  });
+
+
+ // Task 8 - Tax Calculation
+
+function calculateTax(amount, taxRate) {
+    return amount * (taxRate / 100) ;
+}
+       // Let's use an example case
+       let amount = 300 ; 
+       let taxRate = 18 ;
+
+console.log(`The calculated tax for $${amount} at a ${taxRate} tax rate is $${calculateTax(amount, taxRate)}`)
+                                                // The calculated tax for $300 at a 18 tax rate is $54
+
